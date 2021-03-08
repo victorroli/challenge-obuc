@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="sortcut icon" href="./img/logo-obuc.png" type="image/x-icon" />
+    <script src="./index.js"></script>
+    <title>Challenge OBUC</title>
+</head>
+
+<body>
+    <header class="header__pagina">
+        <div>
+            <span>Controle de Locais de Trabalho</span>
+        </div>
+        <div>
+            <div class="div__home">
+                <a href="#" alt="Home"></a>
+            </div>
+            <div class="div__info-user">
+                <span>Usuário</span>
+                <br>
+                <span>Administrador</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <header>
+                <p>Administração</p>
+            </header>
+            <ul>
+                <li>Administradores</li>
+                <li>Áreas</li>
+                <li class="li__selected">Locais de Trabalho</li>
+                <li>Habilidades</li>
+                <li>Log</li>
+                <li>Responsáveis</li>
+            </ul>
+        </nav>
+
+        <section>
+            <header class="header__local-trabalho">
+                <h3>Locais de Trabalho</h3>
+            </header>
+
+            <form onsubmit="addLocal(event)">
+
+                <table id="table__locais">
+                    <tbody>
+
+                        <tr>
+                            <th>Prédio</th>
+                            <th>Local de Trabalho</th>
+                        </tr>
+
+                        <tr class="tr__insert-infos">
+                            <td>
+                                <select id="select__predio">
+                                    <option value="selecione">Selecione</option>
+                                    <option value="predio1">Prédio 1</option>
+                                    <option value="predio2">Prédio 2</option>
+                                    <option value="predio3">Prédio 3</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="text" id="input__local-trabalho" />
+                            </td>
+                            <td>
+                                <input type="submit" value="+" />
+                            </td>
+                        </tr>
+
+                        <tr class=" tr__cabecalho-locais">
+                            <td>Prédio</td>
+                            <td>Local de Trabalho</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

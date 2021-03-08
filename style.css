@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width:100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+}
+
+main nav header p{
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 10px;
+    background: url('./assets/icons/config-icon.png');
+    background-size: 13px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    filter: invert(100%);
+}
+
+.header__pagina{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./img/admin-small.png');
+    background-repeat: no-repeat;
+    background-size: 86%;
+    background-position: right;
+    background-position-y: bottom;
+    background-color: #1a374c;
+}
+
+.header__pagina > div:first-of-type{
+    background: linear-gradient(90deg, #1a374c, transparent);
+    padding-top: 22px;
+    padding-left: 20px;
+    width: 80%;
+}
+
+.header__pagina > div:nth-child(2){
+    padding: 17px;
+    font-size:13px;
+    display: flex;
+    width: 20%;
+}
+
+.header__pagina i{
+    font-size: 16px;
+}
+
+.header__pagina span{
+    font-style: italic;
+    font-size: 14px;
+}
+
+.header__pagina div:first-of-type > span{
+    font-size: 22px;
+}
+
+.header__pagina > div:nth-child(2){
+    display: flex;
+}
+
+.header__pagina > div > span {
+    color:#fff;
+}
+
+.div__info-user span:last-of-type{
+    font-size: 11px;
+}
+
+.div__info-user{
+    font-weight: bold;
+    background: url('./assets/icons/profile-icon.png');
+    background-size: 32px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    filter: invert(100%);
+}
+
+.div__home{
+    font-weight: bold;
+    background: url('./assets/icons/home_icon.png');
+    background-size: 36px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    filter: invert(100%);
+    border-right: 1px solid;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+main{
+    display: flex;
+}
+
+nav{
+    width: 20%;
+    height: 100vh;
+    background: linear-gradient(#1b3a50, #4eb8f7);
+    border-top: 1px solid #fff;
+}
+
+nav > ul{
+    list-style: none;
+}
+
+ul li, .tr__cabecalho-locais td{
+    background: #1a374c;
+}
+
+ul li {
+    margin-top: 7px;
+    padding: 9px 9px 9px 25px;
+    color: #f3f3f3;
+    font-weight: bold;
+}
+
+.li__selected{
+    background: linear-gradient( to right, #fff 2%, #1a374c 2%, #1a374c 90%);
+}
+
+section{
+    width: 80%;
+    padding: 30px;
+}
+
+section > form{
+    padding: 28px;
+}
+
+.header__local-trabalho h3 {
+    padding: 10px 10px 6px 6px;
+    border-bottom: 1px solid #6992ae69;
+    box-shadow: 0px 1px 0px #354f6196;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+h3, .tr__conteudo td, th, input{
+    color: #354f61;
+}
+
+input{
+    text-align: center;
+    border: none;
+}
+
+th{
+    text-align: left;
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+
+td{
+    text-align: center;
+}
+
+ ul > li, a, .tr__cabecalho-locais td{
+    color: #fff;
+}
+
+select {
+    width: 200px;
+    text-align: center;
+    margin-right: 6px;
+}
+
+
+.tr__cabecalho-locais{
+    background: blue;
+    height: 26px;
+}
+
+section form{
+    background: #fff;
+    height: 90%;
+}
+
+#table__locais{
+    border-collapse: collapse;
+}
+
+.tr__conteudo td, .tr__cabecalho-locais td{
+    border: 1px solid rgb(194, 191, 191);
+}
+
+nav header{
+    padding: 15px 9px 11px 20px;
+}
+
+form,
+.tr__insert-infos td:nth-child(3) input{
+    box-shadow: 0 0px 0px 0 rgb(0 0 0 / 20%), 0 2px 7px 0 rgb(0 0 0 / 19%);
+    cursor: pointer;
+}
+
+.td__editaLocal{
+    background: url('./assets/icons/edit_icon.png');
+    background-size: 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.td__cancelEdit{
+    background: url('./assets/icons/cancel-icon.png');
+    background-size: 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.td__editConfirm{
+    background: url('./assets/icons/correct-icon.png');
+    background-size: 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.tr__conteudo input{
+    width: 90%;
+}
+
+.td__excluiLocal{
+    background: url('./assets/icons/trash-icon.png');
+    background-size: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.td__excluiLocal:hover,
+.td__editaLocal:hover,
+.td__editConfirm,
+.td__cancelEdit,
+.div__home:hover,
+.div__info-user:hover,
+ul li:hover,
+header p:hover{
+    cursor: pointer;
+}
+
+#input__local-trabalho{
+    border: 1px solid #000;
+    width: 200px;
+}
+
+#select__predio, #input__local-trabalho{
+    height: 23px;
+    border:none;
+    box-shadow: 0 0px 0px 0 rgb(0 0 0 / 20%), 0 2px 7px 0 rgb(0 0 0 / 19%);   
+}
+
+.tr__insert-infos td > select, .tr__insert-infos td > input{
+    border-radius:5px;
+}
+
+.tr__insert-infos td:nth-child(3) input{
+    width: 26px;
+    height: 26px;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+}
+
+.tr__insert-infos td{
+    padding-bottom: 5px;
+}
+
+.tr__insert-infos td:nth-child(3){
+    padding-left: 10px;
+}
+
+.tr__conteudo select{
+    margin: 0px;
+    width: 90%;
+}
+
+.tr__conteudo td{
+    padding: 3px;
+}
